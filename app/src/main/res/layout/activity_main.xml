@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+   >
+
+    <com.allen.comparsechart.CompareIndicator
+        android:id="@+id/com1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:approve_res="@mipmap/bad"
+        app:opposite_res="@mipmap/good"
+
+        />
+    <com.allen.comparsechart.CompareIndicator
+        android:id="@+id/com2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:approve_line_color="@android:color/holo_green_light"
+        app:approve_res="@mipmap/approve"
+        app:oppose_line_color="@android:color/holo_red_dark"
+        app:opposite_res="@mipmap/opposite"
+        />
+    <com.allen.comparsechart.CompareIndicator
+        android:id="@+id/com3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:approve_res="@mipmap/approve_x"
+        app:opposite_res="@mipmap/disapprove"
+        />
+</LinearLayout>
